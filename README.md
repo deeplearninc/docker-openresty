@@ -2,6 +2,17 @@
 
 [![Travis Status](https://travis-ci.org/openresty/docker-openresty.svg?branch=master)](https://travis-ci.org/openresty/docker-openresty)  [![Appveyor status](https://ci.appveyor.com/api/projects/status/github/openresty/docker-openresty?branch=master&svg=true)](https://ci.appveyor.com/project/openresty/docker-openresty)  [![](https://images.microbadger.com/badges/image/openresty/openresty.svg)](https://microbadger.com/#/images/openresty/openresty "microbadger.com")
 
+## Fork status
+
+This fork adds support of `ngx_http_dyups_module` from https://github.com/yzprofile/ngx_http_dyups_module.
+
+To update image:
+
+```
+docker build -t deeplearninc/openresty -f alpine/Dockerfile .
+docker push deeplearninc/openresty
+```
+
 ## Supported tags and respective `Dockerfile` links
 
 The following "flavors" are available and built from [upstream OpenResty packages](http://openresty.org/en/linux-packages.html):
